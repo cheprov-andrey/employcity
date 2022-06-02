@@ -1,0 +1,12 @@
+<body>
+<caption><h2>Новости</h2></caption>
+<br><br><br>
+{% for result in results %}
+<div>
+    <div><h3>{{ result['title'] }}</h3></div>
+    <div><p>{{ result['about'] }}</p></div>
+    <div><a href="{{ result['link'] }}">Читать далее..</a></div>
+    <hr/>
+</div>
+{% endfor %}
+</body>

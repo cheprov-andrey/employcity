@@ -1,0 +1,66 @@
+parameters:
+  hosts:
+    rbc: 'https://rbc.ru/'
+  rbcMenu:
+    body:
+      mainFilter: 'div.js-news-feed-list'
+      postSelector: 'a'
+      excludeBySubString:
+        - 'video_id'
+        - 'tochka.rbc.ru'
+        - '20idei.rbc.ru'
+        - 'megafon.rbc.ru'
+  rbc:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__main'
+        - 'div.article__text_free'
+      postSelector: 'p'
+  pro:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__pro'
+      postSelector: 'p'
+  realty:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__main'
+        - 'div.article__text_free'
+      postSelector: 'p'
+  quote:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__main'
+        - 'div.article__text_free'
+      postSelector: 'p'
+  sportrbc:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__main'
+        - 'div.article__text_free'
+      postSelector: 'p'
+  autonews:
+    body:
+      image: 'img'
+      mainFilter: 'div.js-rbcslider-article'
+      postBody:
+        - 'div.l-base__col__main'
+      postSelector: 'p'
+  trends:
+    body:
+      image: 'img.article__main-image__image'
+      mainFilter: 'div.l-table'
+      postBody:
+        - 'div.article__text__main'
+        - 'div.article__text_free'
+      postSelector: 'p'
